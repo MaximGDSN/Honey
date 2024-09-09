@@ -1,0 +1,81 @@
+.icon--logo{
+	fill:#FFA638;
+	stroke: #000;
+	position: relative;
+	width: 90px;
+	height: 40px;
+	max-height: 100%;
+	@include pc1920 {
+		width: 140px;
+		height: 90px;
+	}
+	@include mobile {
+		 width:140px;
+		 height:70px;
+		 margin: 0 auto;
+		 
+	}
+
+}
+
+.icon--honey-bg {
+	fill: #ffa638;
+	stroke: #FFA638;
+	width:clamp(17.625rem, 0.016rem + 88.05vw, 88.063rem);
+	max-height:611px;
+}
+.shops__wrapper-item svg {
+	fill:#A7A7A7;
+	&:hover {
+		stroke:#000;
+		transform: scale(1.05);
+	}
+	@include mobile {
+		 width:205px;
+		 height:min(7vw, 40px);
+	}
+
+}
+.icon--exotic {
+	width: 144px;
+	height: 38px;
+
+}
+
+.icon--miu {
+	width: 228px;
+	height: 38px;
+}
+
+.icon--dunkin {
+	width: 205px;
+	height: 38px;
+}
+.icon--burberry {
+	width: 263px;
+	height: 38px;
+}
+
+.icon__footer-logo {
+	fill: #000;
+	stroke: #000;
+	width:66px;
+	height: 28.6px;
+}
+.icon--facebook {
+	width: 10px;
+	height: 20px;
+}
+
+.icon--twitter {
+	width: 24px;
+	height: 20px;
+}
+.icon--google-plus {
+	width: 27px;
+	height: 18px;
+}
+.icon--pinterest {
+	width: 15.6px;
+	height: 20.5px;
+}

@@ -1,0 +1,187 @@
+.section__honey {
+	width: clamp(17.75rem, 93.75vw, 225rem);
+	max-height: 865px;
+	margin: 0 auto clamp(1.875rem, 0.313rem + 7.81vw, 8.125rem) auto;
+	&::before {
+		content: "";
+		background-image: image-set(
+			url('./../../img/honey/honey-spoon.webp') 1x,
+			url('./../../img/honey/honey-spoon@2x.webp') 2x);
+		position: absolute;
+		left:0;
+		z-index:2;
+		width: 420px;
+		height: 330px;
+		background-repeat: no-repeat;
+		background-size: contain;
+			@include tablet {
+			 	width:clamp(2.813rem, -3.047rem + 29.3vw, 26.25rem);
+				height: clamp(4.375rem, 0.313rem + 20.31vw, 20.625rem);
+		}
+	}
+}
+
+.honey-bg {
+	max-width: unset;
+	padding: 0;
+	border-radius: 30px;
+	background: linear-gradient(57deg, #ff9d2d 0%, #ffd877 100%);
+	@include mobile {
+		 border-radius:10px;
+	}
+}
+.container__honey {
+	max-width: 1600px;
+	margin:0 auto;
+	position: relative;
+	padding: 
+	clamp(6.3rem, -13.629rem + 21.38vw, 7.75rem)
+	3px 
+	clamp(0rem, -10.002rem + 15.69vw, 5.688rem) 
+	clamp(4.4rem, -10.104rem + 21.17vw, 11.063rem);
+	@include pc1920 {
+		 padding-left: 60px;
+	}
+	@include tablet {
+		 padding-top:0px;
+		 padding-left:clamp(0rem, -9.57rem + 21.88vw, 4.375rem);
+	}
+}
+	
+.container__honey-bg {
+	top:clamp(0.313rem, -6.722rem + 11.03vw, 4.313rem);
+	right:3px;
+
+	background-image: image-set(
+		url('./../../img/honey/bg-image.webp') 1x,
+		url('./../../img/honey/bg-image@2x.webp') 2x);
+	
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	z-index:0;
+
+	height:clamp(7.625rem, -0.016rem + 38.2vw, 38.188rem);
+	width: clamp(17.563rem, -0.047rem + 88.05vw, 88rem);
+}
+	
+.honey__wrapper-grid {
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	grid-template-rows: 1fr 180px;
+	min-height:100%;
+	max-width:1437px;
+	position: relative;
+	z-index:1;
+		@include tablet {
+			grid-template-rows: 1fr 140px;
+		}
+		@include mobile {
+			grid-template-rows:1fr clamp(4.375rem, 2.27rem + 10.53vw, 6.875rem);
+		}
+	}
+	
+.honey__wrapper-title {
+	padding-top:58px;
+	margin-left:auto;
+	margin-right:min(3.64vw, 21px);
+		@include mobile {
+			 grid-column: 1/2;
+			 margin-left:7vw;
+			 padding-top:15px;
+			 margin-left:min(9vw, 65px);
+		}
+	}
+.honey__wrapper-img {
+	display: grid;
+	grid-column: 2/3;
+	grid-row: 1/3;
+	position: relative;
+		& img {	
+			width:clamp(18.78rem, 42.93vw, 42.927rem);
+			height: clamp(17.773rem, 40.63vw, 40.625rem);
+			@include mobile {
+				position: absolute;
+				width: clamp(8rem, -0.035rem + 37.58vw, 16.406rem);
+				height: clamp(6.25rem, -0.382rem + 33.16vw, 14.125rem);
+				margin-left:-10px;
+				margin-top:20px;
+			}
+		}	
+		@include mobile {
+			grid-row: 1/2;
+			margin-left:5vw;
+		}
+}
+	
+.honey__title {
+	font-weight: 700;
+	font-size: clamp(4.2rem, -1.417rem + 7.67vw, 6.25rem);
+	color: #0b0b0b;
+	@include notebook {
+		 line-height: 120%;
+	}
+	@include tablet {
+		font-size:clamp(2.5rem, -1.602rem + 9.38vw, 4.375rem);
+	}
+	@include mobile {
+		 font-size: clamp(1.875rem, 0.296rem + 7.89vw, 3.75rem);
+	}
+
+}
+
+.honey__title2 {
+	padding-left:98px;
+	@include tablet {
+		padding-left:clamp(3.75rem, -1.445rem + 11.88vw, 6.125rem);
+	}
+	@include mobile {
+		 padding-left: 23px;
+	}
+}
+.honey__title-block {
+	display: flex;
+	gap:20px;
+	@include mobile {
+		 padding-left:46px
+	}
+}
+.honey__title-block__item {
+	border-bottom: 2px solid #000;
+	opacity: 1;
+	width:clamp(10.5rem, -8.542rem + 25.67vw, 17.125rem);
+	position: relative;
+		@include tablet {
+			 width:clamp(7.5rem, -2.891rem + 23.75vw, 12.25rem);
+		}
+		@include mobile {
+			display: none;
+		}
+	& img {
+		width:clamp(7rem, -4.688rem + 16.5vw, 11.813rem);
+		height: clamp(5rem, -2.604rem + 10.67vw, 8.063rem);
+		position: absolute;
+		bottom:-8px;
+				@include tablet {
+					width:clamp(4.804rem, -0.001rem + 10.98vw, 7rem);
+					height:clamp(3.431rem, 7.84vw, 5rem);
+				}
+			}
+	}
+	
+.honey__wrapper-btns {
+	margin-top:clamp(2.188rem, -1.458rem + 5.83vw, 4.375rem);
+	display: flex;
+	gap:30px;
+	max-height:65px;
+	margin-bottom:auto;
+	margin-left:min(4.8vw, 65px);
+	@include tablet {
+		 margin-left:auto;
+		 margin-right:auto;
+	}
+	@include mobile {
+		grid-column:1/3;
+		margin:auto;
+	}
+}

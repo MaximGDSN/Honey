@@ -1,0 +1,126 @@
+.section-about {
+	margin-bottom: min(7.8vw, 100px);
+	position: relative;
+		& .container {
+			padding:0 clamp(0.625rem, -3.167rem + 8.67vw, 5.5rem); //10/88 700/1600
+		}
+	}
+
+
+.about__wrapper {
+	display:grid;
+	grid-template-columns:  1fr 1fr;
+	gap: 0 30px;
+
+	@include mobile {
+		 grid-template-columns: 1fr;
+		 grid-template-rows: 1fr;
+		 gap:10px 0;
+		 justify-content: center;
+
+	}
+}
+
+.about__square {
+	height:clamp(16.25rem, -3.72rem + 63.9vw, 49rem); //313 to 784 700 1320
+	width: clamp(18.75rem, -18.367rem + 84.84vw, 51.625rem);
+	padding-left:min(4.06vw, 30px);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0;
+	@include mobile {
+		 margin: 0 auto;
+		 &--try {
+			grid-row: 1/2;
+		 }
+	}
+}
+.about__square-item {
+	border-radius: min(5.71vw, 100px);
+	width: clamp(11.875rem, -8.385rem + 54.03vw, 36.188rem); // 190 579 600/1320
+	height:clamp(11.25rem, -9.531rem + 55.42vw, 36.188rem); //180/555 600/1320
+}
+.square1 {
+	transform: rotate(-59deg);
+	background: linear-gradient(57deg, #ffce96 0%, #fff9eb 100%);
+	position: relative;
+	margin:auto 0 auto 30px;
+		@include mobile {
+			 margin-left:0px;
+		}
+	&--try {
+		margin-left:-35px;
+		@include mobile500 {
+			 margin-left:0px;
+		}
+	}
+}
+.square2 {
+	border: 6px solid #fff;
+	background: #f4f4f4;
+	position: absolute;
+	right:min(3.5vw, 50px);
+	bottom:min(3.5vw, 50px);
+		@include mobile {
+			border:3px solid #fff;
+		}
+	 & img {
+		transform: rotate(59deg);
+		margin-top: clamp(0.563rem, -2.331rem + 6.61vw, 3.125rem); // 9/37 600/1320
+		margin-left: clamp(2.313rem, -2.486rem + 10.97vw, 6.563rem); // 37/105 600/1320
+		width: clamp(8.438rem, -4.583rem + 34.72vw, 24.063rem); //135/389 600/1320
+		height: clamp(9.688rem, -7.5rem + 45.83vw, 30.313rem); //155/485 600/1320
+	}
+}
+
+.about__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left:min(0.5vw, 20px);
+	&--try {
+		@include mobile {
+			 grid-row:2/3;
+		}
+		
+	}
+}
+
+.about__text-p {
+	font-weight: 600;
+	font-size: min(2.5vw, 22px);
+	line-height: 160%;
+	color: #000;
+
+	margin-bottom: min(5vw, 50px);
+	margin-top: min(2.5vw, 30px);
+	opacity: 0.7;
+	@include mobile {
+		text-align: justify;	 
+		margin-bottom: 15px;
+		font-size: min(5vw, 16px);
+	}
+}
+.about__text-btn {
+	padding: 15px 40px;
+	background: #e58311;
+	width: 189px;
+	position: relative;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 160%;
+	color: #fff;
+	&:hover {
+		background: #000;
+		transition: all 0.2s ease-in;
+		color: #ffce96;
+	}
+	@include mobile {
+		 padding:10px 35px;
+		 font-size: 16px;
+		 margin:0 auto;
+	}
+}

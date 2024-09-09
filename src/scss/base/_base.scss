@@ -1,0 +1,27 @@
+
+html {
+	scroll-behavior: smooth;
+	background-color: #fff;
+}
+.container {
+	max-width: var(--container-width);
+	margin:0 auto;
+	padding: var(--container-padding);
+	@include mobile {
+		padding: 0 15px;
+	}
+}
+
+ a {
+	color: black;
+ }
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-family);
+	text-wrap: balance;
+}
+
+img {
+	display: block;
+}

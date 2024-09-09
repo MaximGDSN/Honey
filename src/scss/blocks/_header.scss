@@ -1,0 +1,35 @@
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0px 30px clamp(1.188rem, -6.493rem + 17.56vw, 11.063rem);
+	@include mobile {
+		 padding:0;
+	}
+}
+
+.nav__list {
+	display: flex;
+	gap:32px;
+
+	font-weight: 500;
+	font-size: 18px;
+	color: #000;
+
+	@include pc1920 {
+		 font-size: 28px;
+	}
+}
+.nav__list-link{
+	padding:2px 6px;
+	 &:hover {
+		background: linear-gradient(57deg, rgb(255, 157, 45, 0.5) 0%, rgb(255, 216, 119, 0.5) 100%);
+		border-radius:10px
+	}
+}
+.header__nav {
+	@include mobile {
+		 display: none; 
+	}
+}

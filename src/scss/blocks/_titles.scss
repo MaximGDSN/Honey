@@ -1,0 +1,37 @@
+.title-1 {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 160%;
+	color: #000;
+	@include tablet {
+		font-size: 35px;
+	}
+	@include mobile {
+		 font-size: 26px;
+		 margin-bottom:20px;
+	}
+}
+
+.title-2 {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 145%;
+	color: #000;
+	@include tablet {
+		 font-size: 32px;
+	}
+	@include mobile {
+		 font-size: 30px;
+		 text-align: center;
+	}
+}
+
+.products__item-title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 140%;
+	color: #000;
+	@include mobile500 {
+		 font-size: min(5vw, 20px);
+	}
+}
